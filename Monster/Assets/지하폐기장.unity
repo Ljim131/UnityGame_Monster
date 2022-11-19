@@ -194,8 +194,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 880904403
-  m_SortingLayer: 3
+  m_SortingLayerID: 948394031
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -838,7 +838,7 @@ Animator:
   m_GameObject: {fileID: 294866658}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c8d33b53b5f4dd94e920d6ce20e784fd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9b529ef52cdc64349870b7cd04c648c0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -889,15 +889,15 @@ SpriteRenderer:
   m_SortingLayerID: -2014322403
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -471996702, guid: acf3579fbcd64254e941acee47f8d6b2, type: 3}
+  m_Sprite: {fileID: 71192931, guid: 8db6b686a34dcf0469f604fceffc99e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6, y: 3.5}
+  m_Size: {x: 1.25, y: 1.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &294866661
@@ -950,9 +950,9 @@ BoxCollider2D:
   m_Offset: {x: -0.025173187, y: -0.1916883}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.2}
-    oldSize: {x: 1.3, y: 1.75}
-    newSize: {x: 2.6, y: 3.5}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3888888, y: 1.8888888}
+    newSize: {x: 1.25, y: 1.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1889,8 +1889,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 948394031
-  m_SortingLayer: 2
+  m_SortingLayerID: 864734355
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.325, y: 1.075, z: 0}
