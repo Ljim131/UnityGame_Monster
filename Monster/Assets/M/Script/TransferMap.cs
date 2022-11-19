@@ -7,9 +7,12 @@ public class TransferMap : MonoBehaviour {
     
     public string transferMapName; //이동할 맵의 이름
 
-    private MovingObject thePlayer;
+    public Transform target;
 
+    private MovingObject thePlayer;
+    private CameraManager theCamera;
     void Start() {
+        theCamera = FindObjectOfType<CameraManager>();
         thePlayer = FindObjectOfType<MovingObject>(); 
     }
 
@@ -17,7 +20,9 @@ public class TransferMap : MonoBehaviour {
         if(collision.gameObject.name == "Player") 
         {
             thePlayer.currentMapName = transferMapName;
-            SceneManager.LoadScene(transferMapName);
+            //SceneManager.LoadScene(transferMapName);
+            theCamera.transform.position = new Vector3(target.transform.position.x, target.transform.position.y, theCamera.transform.position.z);
+            thePlayer.transform.position = target.transform.position;
         }
     }
 }

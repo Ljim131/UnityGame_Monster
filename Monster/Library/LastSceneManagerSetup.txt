@@ -3,11 +3,3 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: "Assets/\uC9C0\uD558\uAC10\uC625.unity"
-  isLoaded: 1
-  isActive: 0
-  isSubScene: 0
-- path: "Assets/\uC9C0\uD558\uD3D0\uAE30\uC7A5.unity"
-  isLoaded: 1
-  isActive: 0
-  isSubScene: 0

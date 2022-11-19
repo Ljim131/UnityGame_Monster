@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovingObject : MonoBehaviour
 {
 
+    static public MovingObject instance; //캐릭터 간 instance 값 공유
+
     public string currentMapName;
 
     private BoxCollider2D boxCollider;
@@ -26,9 +28,17 @@ public class MovingObject : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-        boxCollider = GetComponent<BoxCollider2D>();
-        animator = GetComponent<Animator>();
+        if(instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            boxCollider = GetComponent<BoxCollider2D>();
+            animator = GetComponent<Animator>();
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     IEnumerator MoveCoroutine()
