@@ -378,8 +378,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/M/Script/CameraManager.cs"
 "Assets/M/Script/MovingObject.cs"
-"Assets/M/Script/NPCManager.cs"
 "Assets/M/Script/StartPoint.cs"
+"Assets/M/Script/TrackerControl.cs"
 "Assets/M/Script/TransferMap.cs"
 -langversion:9.0
 

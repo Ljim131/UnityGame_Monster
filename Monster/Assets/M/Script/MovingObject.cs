@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
-
     static public MovingObject instance; //캐릭터 간 instance 값 공유
 
     public string currentMapName;
