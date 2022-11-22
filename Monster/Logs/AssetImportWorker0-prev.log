@@ -1,0 +1,363 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ko' Physical Memory: 12139 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity Hub\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/git/UnityGame_Monster/Monster
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+5124
+Successfully changed project path to: D:/git/UnityGame_Monster/Monster
+D:/git/UnityGame_Monster/Monster
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 134.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity Hub/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/git/UnityGame_Monster/Monster/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX250 (ID=0x1d13)
+    Vendor:   NVIDIA
+    VRAM:     1983 MB
+    Driver:   30.0.15.1169
+Initialize mono
+Mono path[0] = 'D:/Program Files/Unity Hub/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity Hub/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/Unity Hub/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/Unity Hub/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003506 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 117.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Domain Reload Profiling:
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (599ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (141ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (362ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008235 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\git\UnityGame_Monster\Monster\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\git\UnityGame_Monster\Monster\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 126.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.541 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1542ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1199ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (610ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (127ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (316ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4232 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (300.1 KB). Loaded Objects now: 4682.
+Memory consumption went from 162.1 MB to 161.8 MB.
+Total: 3.928300 ms (FindLiveObjects: 0.397500 ms CreateObjectMapping: 0.350800 ms MarkObjects: 2.997800 ms  DeleteObjects: 0.180900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 599532.467748 seconds.
+  path: Assets/M/아이템 반짝이/열쇠 아이템.png
+  artifactKey: Guid(72be34f183ad395409c2bbff3975bcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/열쇠 아이템.png using Guid(72be34f183ad395409c2bbff3975bcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f6bd5e778e44c9d1b955586cdbdf7e') in 0.128282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.422312 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e186d638006fd4d300b962a061e60ea7') in 0.022081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.320850 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d0dc13e72a6759ce5d6be3e42ba9f6') in 0.014520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.062722 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8fc879fc14f87d78ec643e8d84fdb1') in 0.017006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.606518 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이_0.asset
+  artifactKey: Guid(dd8c71e03fbef2540840d6a0c40c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이_0.asset using Guid(dd8c71e03fbef2540840d6a0c40c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d3baee4c2613ef34ee9254509a5d8d') in 0.036399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.191411 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e241db4d3472d024baeb1fa105557f2d') in 0.016435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.836206 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823357cbadff242f71e70e415ec88cb1') in 0.015023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.228138 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이_0.asset
+  artifactKey: Guid(dd8c71e03fbef2540840d6a0c40c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이_0.asset using Guid(dd8c71e03fbef2540840d6a0c40c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632076ad313cddb416a7e8117d7182e9') in 0.009000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.993193 seconds.
+  path: Assets/M/비밀방자료/열쇠 아이템_0.asset
+  artifactKey: Guid(f6e8a71495bc8f04186cba92252c2467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/비밀방자료/열쇠 아이템_0.asset using Guid(f6e8a71495bc8f04186cba92252c2467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15877941f00560838f53618dec40753d') in 0.013485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.986781 seconds.
+  path: Assets/M/아이템 반짝이
+  artifactKey: Guid(8c5a769f58fece945a1c60b01b43f81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이 using Guid(8c5a769f58fece945a1c60b01b43f81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a310e605445ce2d7a9370d4288affc') in 0.003568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 209.233980 seconds.
+  path: Assets/M/응접실자료/열쇠 아이템_0.asset
+  artifactKey: Guid(041f7a0db46aff7408ec8aa17e440cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/응접실자료/열쇠 아이템_0.asset using Guid(041f7a0db46aff7408ec8aa17e440cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183dc2b6322f7a13bd93bbc006445bba') in 0.010404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.117713 seconds.
+  path: Assets/M/화실자료/열쇠 아이템_0.asset
+  artifactKey: Guid(f63a8c87429bbdc4c8f5a192080f5037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/화실자료/열쇠 아이템_0.asset using Guid(f63a8c87429bbdc4c8f5a192080f5037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9a047c4a76700ffd160068ba8a57c1') in 0.040798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.621955 seconds.
+  path: Assets/M/화장실자료/벽테두리.prefab
+  artifactKey: Guid(3c60a75c49eab7847bda8c70789370bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/화장실자료/벽테두리.prefab using Guid(3c60a75c49eab7847bda8c70789370bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1138ee8df8da4a88d8b9305b603d156') in 0.108111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.620363 seconds.
+  path: Assets/S/맵/ssj.prefab
+  artifactKey: Guid(a9f60c67c8377c54e807da479de1bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/S/맵/ssj.prefab using Guid(a9f60c67c8377c54e807da479de1bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31016bc97152d030fe59f14753e1fe5f') in 0.227768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.247014 seconds.
+  path: Assets/S/맵/열쇠 아이템_0.asset
+  artifactKey: Guid(20d29a95e0cb9fb4f92a887f848de7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/S/맵/열쇠 아이템_0.asset using Guid(20d29a95e0cb9fb4f92a887f848de7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559f92cc522cd7d9ae50823da2edfeba') in 0.008768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.266857 seconds.
+  path: Assets/S/맵/ssj.prefab
+  artifactKey: Guid(a9f60c67c8377c54e807da479de1bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/S/맵/ssj.prefab using Guid(a9f60c67c8377c54e807da479de1bb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbee81b101ea1e964135320e4e25f64') in 0.151672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.198959 seconds.
+  path: Assets/U/맵/인테리어/열쇠 아이템_0.asset
+  artifactKey: Guid(4fcdeaf1182b9584786a6640185e5859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/U/맵/인테리어/열쇠 아이템_0.asset using Guid(4fcdeaf1182b9584786a6640185e5859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af5cd76d191dc95843a8e899adee784') in 0.020969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1516.481085 seconds.
+  path: Assets/S/맵/prison_1.prefab
+  artifactKey: Guid(7a12d367fb5aaf947a02372b4b5b8ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/S/맵/prison_1.prefab using Guid(7a12d367fb5aaf947a02372b4b5b8ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fefd92927b6fa750d44db0b880a3bf6') in 0.044963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 585.383247 seconds.
+  path: Assets/M/아이템 반짝이/아이템 반짝이.png
+  artifactKey: Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/아이템 반짝이/아이템 반짝이.png using Guid(eb5ec3aaba13cc44bb70077dedaaf29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41ef448fef3fa8d4124e8128089ccc6') in 0.020606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.188238 seconds.
+  path: Assets/M/비밀방자료/비밀방 아이템.prefab
+  artifactKey: Guid(6df34548668bf724cbf8ba0f038a23b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/비밀방자료/비밀방 아이템.prefab using Guid(6df34548668bf724cbf8ba0f038a23b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba141c95b78b6980019b2a8efec065e') in 0.060351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.304480 seconds.
+  path: Assets/M/비밀방자료/비밀방 아이템.prefab
+  artifactKey: Guid(6df34548668bf724cbf8ba0f038a23b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/비밀방자료/비밀방 아이템.prefab using Guid(6df34548668bf724cbf8ba0f038a23b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2179d40dce94344a25b026f5e63d7f3f') in 0.062198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.750699 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster_Standing_Up.anim
+  artifactKey: Guid(d4f78b14490748d4984660da5720b937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster_Standing_Up.anim using Guid(d4f78b14490748d4984660da5720b937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e01618b26470a02bcbcbe46dea6796d') in 0.012956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.479882 seconds.
+  path: Assets/M/화장실자료/벽테두리.prefab
+  artifactKey: Guid(3c60a75c49eab7847bda8c70789370bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/화장실자료/벽테두리.prefab using Guid(3c60a75c49eab7847bda8c70789370bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a2ce90120919573f1c9edff3089bc7') in 0.308762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.120586 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster_Standing_Left.anim
+  artifactKey: Guid(99ad6561a08c5634e96ce29fa171e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster_Standing_Left.anim using Guid(99ad6561a08c5634e96ce29fa171e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c4f0dd3de08fa9d93e329e85df3e65') in 0.006385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.448174 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster_Standing_Down.anim
+  artifactKey: Guid(75000e07255f0a8409fd1e8cd10b2c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster_Standing_Down.anim using Guid(75000e07255f0a8409fd1e8cd10b2c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a537e99868940457428c2e4678add7') in 0.006122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.894309 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster.controller
+  artifactKey: Guid(3f6013dc48d319346aaff8e6d4f40695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster.controller using Guid(3f6013dc48d319346aaff8e6d4f40695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29094d02863c4d4307e25b50151106f') in 0.013408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.013675 seconds.
+  path: Assets/M/비밀방자료/dark-wood_4_0.asset
+  artifactKey: Guid(a1833884dd6a21a4aa735f24f2616397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/비밀방자료/dark-wood_4_0.asset using Guid(a1833884dd6a21a4aa735f24f2616397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87649a97f26955b1ba6dfde26a4d6786') in 0.012814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.997506 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster_Walking_Down.anim
+  artifactKey: Guid(310fdcb9679da0743b21157f11d44a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster_Walking_Down.anim using Guid(310fdcb9679da0743b21157f11d44a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b56f322a79dfd8e9d7e4a185cc83d6') in 0.008289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.919904 seconds.
+  path: Assets/M/Script/TransferMap.cs
+  artifactKey: Guid(3d4e81f53fdd6ce409554655e325530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/Script/TransferMap.cs using Guid(3d4e81f53fdd6ce409554655e325530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554d061ac8fd3b850e12819a5dbbdd82') in 0.012785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.496637 seconds.
+  path: Assets/U/맵/New Palette.prefab
+  artifactKey: Guid(2ba1e79fb5700b44397a7a247d57e608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/U/맵/New Palette.prefab using Guid(2ba1e79fb5700b44397a7a247d57e608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4071b15c237d0085f3ea8b4e5e45de4') in 0.286762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.550438 seconds.
+  path: Assets/M/M_Animation/M_Monster/Monster_Standing_Right.anim
+  artifactKey: Guid(f28fb4013a7b3ec44990413ef6ea0625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/M_Animation/M_Monster/Monster_Standing_Right.anim using Guid(f28fb4013a7b3ec44990413ef6ea0625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c97458c8244def6d5cb14ad4422d74') in 0.010571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.730004 seconds.
+  path: Assets/7_ALL.unity
+  artifactKey: Guid(339ec5ebb0f8bac44929e5e544be530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/7_ALL.unity using Guid(339ec5ebb0f8bac44929e5e544be530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d427dfbc890d12529b9afe059f5b84') in 0.006303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.436893 seconds.
+  path: Assets/M/화실자료/화실아이템 6254.prefab
+  artifactKey: Guid(9824e6e3ea2734c4cb6aa927764fd48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M/화실자료/화실아이템 6254.prefab using Guid(9824e6e3ea2734c4cb6aa927764fd48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcf86f7a0c45ee6344fe2b8a818efbc') in 0.072159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 664.492697 seconds.
+  path: Assets/8_ALL.unity
+  artifactKey: Guid(339ec5ebb0f8bac44929e5e544be530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8_ALL.unity using Guid(339ec5ebb0f8bac44929e5e544be530b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935a567b0af64c8b711fe9b1be7aa997') in 0.024864 seconds 
