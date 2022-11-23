@@ -8,14 +8,20 @@ public class PlayManager : MovingObject
 
     public string currentMapName;
 
-    
+    public string walkSound_1;
+    public string walkSound_2;
+    public string walkSound_3; 
+    public string walkSound_4;
+
+    private AudioManager theAudio;
+
     public float runSpeed; 
     private float applyRunSpeed;
     private bool applyRunFlag = false;
 
     private bool canMove = true; 
 
-    
+
 
     void Start()
     {
@@ -24,6 +30,7 @@ public class PlayManager : MovingObject
             DontDestroyOnLoad(this.gameObject);
             boxCollider = GetComponent<BoxCollider2D>();
             animator = GetComponent<Animator>();
+            theAudio = FindObjectOfType<AudioManager>();
             instance = this;
         }
         else
@@ -55,19 +62,29 @@ public class PlayManager : MovingObject
             animator.SetFloat("DirX", vector.x);
             animator.SetFloat("DirY", vector.y);
 
-            RaycastHit2D hit; 
-
-            Vector2 start = transform.position; 
-            Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount); 
-
-            boxCollider.enabled = false;
-            hit = Physics2D.Linecast(start, end, layerMask);
-            boxCollider.enabled = true;
-
-            if (hit.transform != null)
+            bool CheckCollsionFlag = base.CheckCollsion();
+            if (CheckCollsionFlag)
                 break;
 
             animator.SetBool("Walking", true);
+
+            int temp = Random.Range(1, 4);
+            switch(temp)
+            {
+                case 1:
+                    theAudio.Play(walkSound_1);
+                    break;
+                case 2:
+                    theAudio.Play(walkSound_2);
+                    break;
+                case 3:
+                    theAudio.Play(walkSound_3);
+                    break;
+                case 4:
+                    theAudio.Play(walkSound_4);
+                    break;
+            }
+            
 
             while (currentWalkCount < walkCount)
             {
@@ -85,7 +102,8 @@ public class PlayManager : MovingObject
                     currentWalkCount++;
                 }
                 currentWalkCount++;
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSeconds(0.01f);            
+
             }
             currentWalkCount = 0;
 

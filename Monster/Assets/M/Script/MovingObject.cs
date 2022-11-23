@@ -8,6 +8,8 @@ public class MovingObject : MonoBehaviour
     public int walkCount; 
     protected int currentWalkCount;
 
+    protected bool npcCanMove = true;
+
     protected Vector3 vector;
     
     public BoxCollider2D boxCollider;
@@ -22,6 +24,7 @@ public class MovingObject : MonoBehaviour
 
     IEnumerator MoveCoroutine(string _dir)
     {
+        npcCanMove = false;
         vector.Set(0, 0, vector.z);
         switch(_dir)
         {
@@ -45,14 +48,29 @@ public class MovingObject : MonoBehaviour
         while (currentWalkCount < walkCount)
             {
                 transform.Translate(vector.x * speed, vector.y * speed, 0); 
-                
                 currentWalkCount++;
                 yield return new WaitForSeconds(0.01f);
             }
             currentWalkCount=0;
             animator.SetBool("Walking", false);
+            npcCanMove = true;
         
     }
 
-    
+
+    protected bool CheckCollsion()
+        {
+            RaycastHit2D hit; 
+
+                Vector2 start = transform.position; 
+                Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount); 
+
+                boxCollider.enabled = false;
+                hit = Physics2D.Linecast(start, end, layerMask);
+                boxCollider.enabled = true;
+
+                if (hit.transform != null)
+                    return true;
+                return false;
+        }
 }

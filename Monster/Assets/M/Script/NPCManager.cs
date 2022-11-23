@@ -1,23 +1,25 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class NPCMove
 {
-    
+    [Tooltip("NPCMove를 체크하면 NPC가 움직임")]
     public bool NPCmove;
 
     public string[] direction;
 
-    [Range(1 ,5)]
+    [Range(1 ,5)] [Tooltip("숫자가 클수록 연속적으로")]
     public int frequency;
+    
 }
 public class NPCManager : MovingObject
 {
     [SerializeField]
     public NPCMove npc;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(MoveCoroutine());
@@ -25,11 +27,11 @@ public class NPCManager : MovingObject
 
     public void SetMove()
     {
-
+        StartCoroutine(MoveCoroutine());
     }
     public void SetNotMove()
     {
-
+        
     }
 
     IEnumerator MoveCoroutine()
@@ -57,6 +59,7 @@ public class NPCManager : MovingObject
                     
                 }
 
+                yield return new WaitUntil(() => npcCanMove);
                 base.Move(npc.direction[i]);
 
                 if(i == npc.direction.Length - 1)
@@ -66,4 +69,5 @@ public class NPCManager : MovingObject
             }
         }
     }
+    
 }
