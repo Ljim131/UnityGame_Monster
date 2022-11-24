@@ -17,6 +17,22 @@ public class MovingObject : MonoBehaviour
     public Animator animator;
 
 
+
+    public string currentMapName;
+
+    public float runSpeed;
+    public float applyRunSpeed;
+    public bool applyRunFlag = false;
+
+
+    public bool canMove = true; 
+
+
+
+
+
+
+
     protected void Move(string _dir)
     {
         StartCoroutine(MoveCoroutine(_dir));

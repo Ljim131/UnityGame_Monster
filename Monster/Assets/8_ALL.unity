@@ -58157,7 +58157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b367b031a9d7654d90cb38bba7debaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.005
   walkCount: 40
   boxCollider: {fileID: 1009239557}
   layerMask:
@@ -68502,7 +68502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  walkCount: 10
+  walkCount: 40
   boxCollider: {fileID: 1341595900}
   layerMask:
     serializedVersion: 2
