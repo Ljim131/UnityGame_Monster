@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DatabaseManager : MonoBehaviour
-// ¾ÀÀÌµ¿, ¼¼ÀÌºê¿Í ·Îµå, ¾ÆÀÌÅÛ µî ÇÑ¹ø¾²°í ¾ø¾îÁö´Â °ÍÀÌ ¾Æ´Ñ ±â·ÏÇÑ ÈÄ »ç¿ë °¡´ÉÇÏ°Ô ¸¸µé¾îÁÖ´Â ¿ªÇÒ
+// ì”¬ì´ë™, ì„¸ì´ë¸Œì™€ ë¡œë“œ, ì•„ì´í…œ ë“± í•œë²ˆì“°ê³  ì—†ì–´ì§€ëŠ” ê²ƒì´ ì•„ë‹Œ ê¸°ë¡í•œ í›„ ì‚¬ìš© ê°€ëŠ¥í•˜ê²Œ ë§Œë“¤ì–´ì£¼ëŠ” ì—­í• 
 {
     
 
-    public string[] var_name; //º¯¼öÀÌ¸§
-    public float[] var;  //float °ªÀ» ±â¾ï
+    public string[] var_name; //ë³€ìˆ˜ì´ë¦„
+    public float[] var;  //float ê°’ì„ ê¸°ì–µ
 
     public string[] switch_name;
-    public bool[] switches; //True, False °ªÀ» ±â¾ï
+    public bool[] switches; //True, False ê°’ì„ ê¸°ì–µ
 
 
     public List<Item> itemList = new List<Item>();
@@ -21,10 +21,10 @@ public class DatabaseManager : MonoBehaviour
         switch(_itemID)
         {
             case 1:
-                Debug.Log("È­½ÇÀÌ ¿­·È´Ù");
+                Debug.Log("í™”ì‹¤ì´ ì—´ë ¸ë‹¤");
                 break;
             case 2:
-                Debug.Log("ºñ¹Ğ¹æÀÌ ¿­·È´Ù");
+                Debug.Log("ë¹„ë°€ë°©ì´ ì—´ë ¸ë‹¤");
                 break;
         }
     }
@@ -32,18 +32,18 @@ public class DatabaseManager : MonoBehaviour
 
     void Start()
     {
-        itemList.Add(new Item(1, "È­½Ç ¿­¼è", "È­½Ç·Î °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(2, "ºñ¹Ğ¹æ ¿­¼è", "¾îµğ·Ğ°¡ °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(3, "¼­Àç ¿­¼è", "È­½Ç·Î °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(4, "¼¼Àç", "ÀÌ°Å¶û... ¹¹¶û.. °°ÀÌ ¾²´Â°Ç°¡?", Item.ItemType.Use));
-        itemList.Add(new Item(5, "¼Õ¼ö°Ç", "¹«¾ğ°¡ ´ÛÀ» ¼ö ÀÖ´Â °Í °°´Ù.", Item.ItemType.Use));
-        itemList.Add(new Item(6, "½ÊÀÚµå¶óÀÌ¹ö", "³ª»ç¸¦ Ç® ¼ö ÀÖÀ» °Í °°´Ù.", Item.ItemType.Use));
-        itemList.Add(new Item(7, "ÀÏÀÚµå¶óÀÌ¹ö", "³ª»ç¸¦ Ç® ¼ö ÀÖÀ» °Í °°´Ù.", Item.ItemType.Use));
-        itemList.Add(new Item(8, "Á¤¹® ¿­¼è", "¾î¼­ ºüÁ®³ª°¡ÀÚ!", Item.ItemType.Key));
-        itemList.Add(new Item(9, "ÁÖ¹æ ¿­¼è", "ÁÖ¹æÀ¸·Î °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(10, "Áı¹«½Ç ¿­¼è", "Áı¹«½Ç·Î °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(11, "Ä§½Ç ¿­¼è", "Ä§½Ç·Î °¥ ¼ö ÀÖ´Â ¿­¼èÀÎ °Í °°´Ù.", Item.ItemType.Key));
-        itemList.Add(new Item(12, "Å¬¸³", "ÀÌ°É·Î ¼ö°©À»...", Item.ItemType.Use));
+        itemList.Add(new Item(1, "í™”ì‹¤ ì—´ì‡ ", "í™”ì‹¤ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(2, "ë¹„ë°€ë°© ì—´ì‡ ", "ì–´ë””ë¡ ê°€ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(3, "ì„œì¬ ì—´ì‡ ", "í™”ì‹¤ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(4, "ì„¸ì¬", "ì´ê±°ë‘... ë­ë‘.. ê°™ì´ ì“°ëŠ”ê±´ê°€?", Item.ItemType.Use));
+        itemList.Add(new Item(5, "ì†ìˆ˜ê±´", "ë¬´ì–¸ê°€ ë‹¦ì„ ìˆ˜ ìˆëŠ” ê²ƒ ê°™ë‹¤.", Item.ItemType.Use));
+        itemList.Add(new Item(6, "ì‹­ìë“œë¼ì´ë²„", "ë‚˜ì‚¬ë¥¼ í’€ ìˆ˜ ìˆì„ ê²ƒ ê°™ë‹¤.", Item.ItemType.Use));
+        itemList.Add(new Item(7, "ì¼ìë“œë¼ì´ë²„", "ë‚˜ì‚¬ë¥¼ í’€ ìˆ˜ ìˆì„ ê²ƒ ê°™ë‹¤.", Item.ItemType.Use));
+        itemList.Add(new Item(8, "ì •ë¬¸ ì—´ì‡ ", "ì–´ì„œ ë¹ ì ¸ë‚˜ê°€ì!", Item.ItemType.Key));
+        itemList.Add(new Item(9, "ì£¼ë°© ì—´ì‡ ", "ì£¼ë°©ìœ¼ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(10, "ì§‘ë¬´ì‹¤ ì—´ì‡ ", "ì§‘ë¬´ì‹¤ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(11, "ì¹¨ì‹¤ ì—´ì‡ ", "ì¹¨ì‹¤ë¡œ ê°ˆ ìˆ˜ ìˆëŠ” ì—´ì‡ ì¸ ê²ƒ ê°™ë‹¤.", Item.ItemType.Key));
+        itemList.Add(new Item(12, "í´ë¦½", "ì´ê±¸ë¡œ ìˆ˜ê°‘ì„...", Item.ItemType.Use));
     }
 
    

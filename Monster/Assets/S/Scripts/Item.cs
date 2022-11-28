@@ -5,20 +5,20 @@ using UnityEngine;
 [System.Serializable]
 public class Item
 {
-    public int itemID;  // ¾ÆÀÌÅÛÀÇ °íÀ¯ ID °ª, Áßº¹ ºÒ°¡´É
-    public string itemName; //¾ÆÀÌÅÛÀÇ ÀÌ¸§, Áßº¹ °¡´É
-    public string itemDescription; //¾ÆÀÌÅÛ ¼³¸í
-    public int itemCount; // ÇÃ·¹ÀÌ¾î°¡ ¾ÆÀÌÅÛÀ» ¸î °³ ¼ÒÁöÇÏ°í ÀÖ´ÂÁö (¼ÒÁö°³¼ö)
-    public Sprite itemIcon; //¾ÆÀÌÅÛÀÇ ¾ÆÀÌÄÜ
+    public int itemID;  // ì•„ì´í…œì˜ ê³ ìœ  ID ê°’, ì¤‘ë³µ ë¶ˆê°€ëŠ¥
+    public string itemName; //ì•„ì´í…œì˜ ì´ë¦„, ì¤‘ë³µ ê°€ëŠ¥
+    public string itemDescription; //ì•„ì´í…œ ì„¤ëª…
+    public int itemCount; // í”Œë ˆì´ì–´ê°€ ì•„ì´í…œì„ ëª‡ ê°œ ì†Œì§€í•˜ê³  ìˆëŠ”ì§€ (ì†Œì§€ê°œìˆ˜)
+    public Sprite itemIcon; //ì•„ì´í…œì˜ ì•„ì´ì½˜
     public ItemType itemType;
 
-    public enum ItemType //enumÀÌ¶õ ¿­°Å¶ó´Â ¶æ
+    public enum ItemType //enumì´ë€ ì—´ê±°ë¼ëŠ” ëœ»
     {
-        Key,  //¿­¼è¾ÆÀÌÅÛ
-        Use  //¼Ò¸ğ¾ÆÀÌÅÛ
+        Key,  //ì—´ì‡ ì•„ì´í…œ
+        Use  //ì†Œëª¨ì•„ì´í…œ
     }
 
-    public Item(int _itemID, string _itemName, string _itemDes, ItemType _itemType, int _itemCount = 1) //void¿Í °°Àº °ÍÀÌ ¾øÀ¸¹Ç·Î »ı¼ºÀÚ·Î ¾²°Ú´Ù´Â ÀÇ¹ÌÀÌ´Ù.
+    public Item(int _itemID, string _itemName, string _itemDes, ItemType _itemType, int _itemCount = 1) //voidì™€ ê°™ì€ ê²ƒì´ ì—†ìœ¼ë¯€ë¡œ ìƒì„±ìë¡œ ì“°ê² ë‹¤ëŠ” ì˜ë¯¸ì´ë‹¤.
     {
         itemID = _itemID;
         itemName = _itemName;

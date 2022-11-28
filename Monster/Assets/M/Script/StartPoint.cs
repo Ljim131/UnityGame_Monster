@@ -6,13 +6,13 @@ public class StartPoint : MonoBehaviour
 {
 
     public string startPoint;
-    private PlayManager thePlayer;
+    private PlayerManager thePlayer;
     private CameraManager theCamera;
     
     void Start()
     {
         theCamera = FindObjectOfType<CameraManager>();
-        thePlayer = FindObjectOfType<PlayManager>();
+        thePlayer = FindObjectOfType<PlayerManager>();
 
         if (startPoint == thePlayer.currentMapName)
         {

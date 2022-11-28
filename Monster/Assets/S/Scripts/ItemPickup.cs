@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    public int itemID;
-    public int _count;
-    public string pickUpSound;
-
-    private void OnTriggerStay2D(Collider2D collision)
+    // Start is called before the first frame update
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            AudioManager.instance.Play(pickUpSound);
-            // 인벤토리 추가
-            Inventory.instance.GetAnItem(itemID, _count);
-            Destroy(this.gameObject);
-        }
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }

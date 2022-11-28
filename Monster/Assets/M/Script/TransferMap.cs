@@ -10,11 +10,11 @@ public class TransferMap : MonoBehaviour {
     public Transform target;
     public BoxCollider2D targetBound;
 
-    private PlayManager thePlayer;
+    private PlayerManager thePlayer;
     private CameraManager theCamera;
     void Start() {
         theCamera = FindObjectOfType<CameraManager>();
-        thePlayer = FindObjectOfType<PlayManager>(); 
+        thePlayer = FindObjectOfType<PlayerManager>(); 
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

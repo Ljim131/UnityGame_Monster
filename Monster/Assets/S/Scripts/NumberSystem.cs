@@ -3,37 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NumberSystem : MonoBehaviour
-{
+public class NumberSystem : MonoBehaviour {
 
     private AudioManager theAudio;
-    public string key_sound; // ¹æÇâÅ° »ç¿îµå
-    public string enter_sound; // °áÁ¤Å° »ç¿îµå
-    public string cancel_sound; // ¿À´ä && Ãë¼ÒÅ° »ç¿îµå
-    public string correct_sound; // Á¤´ä »ç¿îµå
-    public int moveX; // superObjectÀÇ x°ªÀ» ¾ó¸¶¸¸Å­ ÀÌµ¿½ÃÅ³Áö
+    public string key_sound; // ë°©í–¥í‚¤ ì‚¬ìš´ë“œ
+    public string enter_sound; // ê²°ì •í‚¤ ì‚¬ìš´ë“œ
+    public string cancel_sound; // ì˜¤ë‹µ && ì·¨ì†Œí‚¤ ì‚¬ìš´ë“œ
+    public string correct_sound; // ì •ë‹µ ì‚¬ìš´ë“œ
+    public int moveX; // superObjectì˜ xê°’ì„ ì–¼ë§ˆë§Œí¼ ì´ë™ì‹œí‚¬ì§€
 
-    private int count;  // ¹è¿­ÀÇ Å©±â, ¸î ÀÚ¸´¼ö -> 1000 ÀÌ¸é 3
-    private int selectedTextBox; // ¼±ÅÃµÈ ÀÚ¸´¼ö.
-    private int result; // ÇÃ·¹ÀÌ¾î°¡ µµÃâÇØ³½ °ª.
-    private int correctNumber; //Á¤´ä  => result ¿Í correctNumber°¡ ÀÏÄ¡ÇÏ¸é Á¤´äÀ¸·Î Ã³¸®
+    private int count; // ë°°ì—´ì˜ í¬ê¸°. ëª‡ ìë¦¿ìˆ˜ 1000 -> 3
+    private int selectedTextBox; // ì„ íƒëœ ìë¦¿ìˆ˜.
+    private int result; // í”Œë ˆì´ì–´ê°€ ë„ì¶œí•´ë‚¸ ê°’.
+    private int correctNumber; // ì •ë‹µ.
 
     private string tempNumber;
 
-    public GameObject superObject; //superObject°¡ °¡¿îµ¥ Á¤·ÄµÇ°Ô ÇØÁÜ
-    public GameObject[] panel; //panelÀ» ÇÊ¿äÇÑ °¹¼ö¸¸Å­ È°¼ºÈ­ ½ÃÅ´
+    public GameObject superObject; // í™”ë©´ ê°€ìš´ë° ì •ë ¬ì„ ìœ„í•œ ë…€ì„.
+    public GameObject[] panel;
     public Text[] Number_Text;
 
     public Animator anim;
 
-    public bool activated; //return new waitUntill , ¹®Á¦¸¦ Ç®°í ´ÙÀ½ ÀÌº¥Æ®·Î ³Ñ¾î°¥ ¼ö ÀÖ°ÔÇØÁÜ
-    private bool keyInput; // Å°Ã³¸® È°¼ºÈ­, ºñÈ°¼ºÈ­.
-    private bool correctFlag; // Á¤´äÀÎÁö ¾Æ´ÑÁö ¿©ºÎ -> correctNumber¿Í ÀÏÄ¡ÇÑ result¸é correctFlag´Â True°¡ µÊ
+    public bool activated; // return new waitUntil
+    private bool keyInput; // í‚¤ì²˜ë¦¬ í™œì„±í™”, ë¹„í™œì„±í™”.
+    private bool correctFlag; // ì •ë‹µì¸ì§€ ì•„ë‹Œì§€ ì—¬ë¶€
 
-    void Start()
-    {
+    // Use this for initialization
+    void Start () {
         theAudio = FindObjectOfType<AudioManager>();
-    }
+   }
 
     public void ShowNumber(int _correctNumber)
     {
@@ -41,17 +40,15 @@ public class NumberSystem : MonoBehaviour
         activated = true;
         correctFlag = false;
 
-        string temp = correctNumber.ToString(); // ¹ŞÀº ¼ıÀÚ¸¦ ¹®ÀÚ¿­·Î ¸¸µé¾îÁÜ ÀÌÀ¯-> length¶ó´Â ¼Ó¼ºÀ» ÀÌ¿ëÇÏ±â À§ÇØ
-        for (int i = 0; i < temp.Length; i++)
+        string temp = correctNumber.ToString(); // "1451" ì´ìœ  -> length.
+        for(int i = 0; i < temp.Length; i++)
         {
             count = i;
-            panel[i].SetActive(true); //ÆĞ³Î È°¼ºÈ­ °¹¼ö
+            panel[i].SetActive(true);
             Number_Text[i].text = "0";
         }
 
-        superObject.transform.position = new Vector3(superObject.transform.position.x + (moveX * count),
-                                                     superObject.transform.position.y,
-                                                     superObject.transform.position.z);
+        superObject.transform.position = new Vector3(superObject.transform.position.x + (moveX * count), superObject.transform.position.y, superObject.transform.position.z);
 
         selectedTextBox = 0;
         result = 0;
@@ -69,16 +66,16 @@ public class NumberSystem : MonoBehaviour
     public void SetNumber(string _arrow)
     {
 
-        int temp = int.Parse(Number_Text[selectedTextBox].text); //¼±ÅÃµÈ ÀÚ¸®¼öÀÇ ÅØ½ºÆ®¸¦ Integer ¼ıÀÚ Çü½ÄÀ¸·Î °­Á¦ Çüº¯È¯
-
-        if (_arrow == "DOWN")
+        int temp = int.Parse(Number_Text[selectedTextBox].text); // ì„ íƒëœ ìë¦¬ìˆ˜ì˜ í…ìŠ¤íŠ¸ë¥¼ Integer ìˆ«ì í˜•ì‹ìœ¼ë¡œ ê°•ì œ í˜•ë³€í™˜.
+        
+        if(_arrow == "DOWN")
         {
             if (temp == 0)
                 temp = 9;
             else
                 temp--;
         }
-        else if (_arrow == "UP")
+        else if(_arrow == "UP")
         {
             if (temp == 9)
                 temp = 0;
@@ -92,7 +89,7 @@ public class NumberSystem : MonoBehaviour
     {
         Color color = Number_Text[0].color;
         color.a = 0.3f;
-        for (int i = 0; i <= count; i++)
+        for(int i = 0; i <= count; i++)
         {
             Number_Text[i].color = color;
         }
@@ -100,9 +97,8 @@ public class NumberSystem : MonoBehaviour
         Number_Text[selectedTextBox].color = color;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+   // Update is called once per frame
+   void Update () {
         if (keyInput)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -133,14 +129,14 @@ public class NumberSystem : MonoBehaviour
                     selectedTextBox = count;
                 SetColor();
             }
-            else if (Input.GetKeyDown(KeyCode.Z)) // °áÁ¤Å°
+            else if (Input.GetKeyDown(KeyCode.Z)) // ê²°ì •í‚¤
             {
                 theAudio.Play(key_sound);
                 keyInput = false;
                 StartCoroutine(OXCoroutine());
 
             }
-            else if (Input.GetKeyDown(KeyCode.X)) // Ãë¼ÒÅ°
+            else if (Input.GetKeyDown(KeyCode.X)) // ì·¨ì†Œí‚¤
             {
                 theAudio.Play(key_sound);
                 keyInput = false;
@@ -148,14 +144,14 @@ public class NumberSystem : MonoBehaviour
             }
 
         }
-    }
+   }
 
     IEnumerator OXCoroutine()
     {
         Color color = Number_Text[0].color;
         color.a = 1f;
 
-        for (int i = count; i >= 0; i--) // 1356ÀÌ ºñ¹øÀÎµ¥ i°¡ 0ºÎÅÍ ½ÃÀÛÇÏ¸é 6531 ÀÌ µÇ±â ¶§¹®¿¡ ³¡ ¹øÈ£ºÎÅÍ ÇÏ´Â°Í
+        for (int i = count; i >= 0; i--)
         {
             Number_Text[i].color = color;
             tempNumber += Number_Text[i].text;
@@ -165,7 +161,7 @@ public class NumberSystem : MonoBehaviour
 
         result = int.Parse(tempNumber);
 
-        if (result == correctNumber)
+        if(result == correctNumber)
         {
             theAudio.Play(correct_sound);
             correctFlag = true;
@@ -175,7 +171,7 @@ public class NumberSystem : MonoBehaviour
             theAudio.Play(cancel_sound);
             correctFlag = false;
         }
-        Debug.Log("¿ì¸®°¡ ³½ ´ä = " + result + "  Á¤´ä = " + correctNumber);
+        Debug.Log("ìš°ë¦¬ê°€ ë‚¸ ë‹µ = " + result + "  ì •ë‹µ = " + correctNumber);
         StartCoroutine(ExitCoroutine());
 
     }
@@ -187,13 +183,11 @@ public class NumberSystem : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
 
-        for (int i = 0; i <= count; i++)
+        for(int i = 0; i <= count; i++)
         {
             panel[i].SetActive(false);
         }
-        superObject.transform.position = new Vector3(superObject.transform.position.x - (moveX * count),
-                                                     superObject.transform.position.y,
-                                                     superObject.transform.position.z);
+        superObject.transform.position = new Vector3(superObject.transform.position.x - (moveX * count), superObject.transform.position.y, superObject.transform.position.z);
 
         activated = false;
     }

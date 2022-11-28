@@ -30,9 +30,6 @@ public class MovingObject : MonoBehaviour
 
 
 
-
-
-
     protected void Move(string _dir)
     {
         StartCoroutine(MoveCoroutine(_dir));
