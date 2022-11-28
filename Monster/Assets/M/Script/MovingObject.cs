@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
+
+    public string characterName;
+
     public float speed; 
     public int walkCount; 
     protected int currentWalkCount;
@@ -12,33 +15,31 @@ public class MovingObject : MonoBehaviour
 
     protected Vector3 vector;
     
+    public Queue<string> queue;
     public BoxCollider2D boxCollider;
-    public LayerMask layerMask;  //통과가 불가능한 레이어 (가상 벽)
+    public LayerMask layerMask;
     public Animator animator;
-
-
 
     public string currentMapName;
 
     public float runSpeed;
     public float applyRunSpeed;
     public bool applyRunFlag = false;
-
-
     public bool canMove = true; 
 
 
-
-
-    protected void Move(string _dir)
+    public void Move(string _dir, int _frequency = 5)
     {
-        StartCoroutine(MoveCoroutine(_dir));
+        StartCoroutine(MoveCoroutine(_dir, _frequency));
     }
 
-    IEnumerator MoveCoroutine(string _dir)
+    IEnumerator MoveCoroutine(string _dir, int _frequency)
     {
-        npcCanMove = false;
+        while(queue.Count != 0)
+        {
+            npcCanMove = false;
         vector.Set(0, 0, vector.z);
+
         switch(_dir)
         {
             case "UP":
@@ -65,9 +66,11 @@ public class MovingObject : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
             }
             currentWalkCount=0;
-            animator.SetBool("Walking", false);
+            if(_frequency != 5)
+                animator.SetBool("Walking", false);
             npcCanMove = true;
-        
+        }
+        animator.SetBool("Walking", false);
     }
 
 

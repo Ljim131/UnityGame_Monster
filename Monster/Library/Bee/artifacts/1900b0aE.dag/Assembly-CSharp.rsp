@@ -383,6 +383,7 @@
 "Assets/M/Script/CameraManager.cs"
 "Assets/M/Script/ChoiceManager.cs"
 "Assets/M/Script/DialogueManager.cs"
+"Assets/M/Script/Event1.cs"
 "Assets/M/Script/FadeManager.cs"
 "Assets/M/Script/LightController.cs"
 "Assets/M/Script/MonsterManager.cs"

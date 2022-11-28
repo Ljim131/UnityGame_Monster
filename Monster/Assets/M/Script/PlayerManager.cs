@@ -18,6 +18,7 @@ public class PlayerManager : MovingObject
     {
         if(instance == null)
         {
+            queue = new Queue<string>();
             DontDestroyOnLoad(this.gameObject);
             boxCollider = GetComponent<BoxCollider2D>();
             animator = GetComponent<Animator>();

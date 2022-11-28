@@ -22,7 +22,7 @@ public class NPCManager : MovingObject
 
     void Start()
     {
-        StartCoroutine(MoveCoroutine());
+        queue = new Queue<string>();
     }
 
     public void SetMove()
@@ -31,7 +31,7 @@ public class NPCManager : MovingObject
     }
     public void SetNotMove()
     {
-        
+        //StopAllCoroutine();
     }
 
     IEnumerator MoveCoroutine()
