@@ -434,9 +434,9 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
-"Assets/U/script/SceneManager.cs"
-"Assets/U/script/SelectManager.cs"
-"Assets/U/script/TalkManager.cs"
+"Assets/U/Scripts/Scene_Manager.cs"
+"Assets/U/Scripts/SelectManager.cs"
+"Assets/U/Scripts/TalkManager.cs"
 -langversion:9.0
 
 /deterministic
