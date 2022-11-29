@@ -382,10 +382,9 @@
 "Assets/M/Script/AudioManager.cs"
 "Assets/M/Script/CameraManager.cs"
 "Assets/M/Script/ChoiceManager.cs"
+"Assets/M/Script/Dialogue.cs"
 "Assets/M/Script/DialogueManager.cs"
 "Assets/M/Script/Event1.cs"
-"Assets/M/Script/FadeManager.cs"
-"Assets/M/Script/LightController.cs"
 "Assets/M/Script/MonsterManager.cs"
 "Assets/M/Script/MovingObject.cs"
 "Assets/M/Script/NPCManager.cs"
@@ -435,6 +434,9 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+"Assets/U/script/SceneManager.cs"
+"Assets/U/script/SelectManager.cs"
+"Assets/U/script/TalkManager.cs"
 -langversion:9.0
 
 /deterministic

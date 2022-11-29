@@ -13,9 +13,10 @@ public class TestMove
 
 public class Test : MonoBehaviour
 {
-    [SerializeField]
-    public TestMove[] move;
+    //[SerializeField]
+    //public TestMove[] move;
 
+    public string direction;
     private OrderManager theOrder;
     //private NumberSystem theNumber;
 
@@ -32,11 +33,12 @@ public class Test : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
-            //theOrder;??
-            for(int i = 0; i < move.Length; i++)
-            {
-                theOrder.Move(move[i].name, move[i].direction);
-            }
+            theOrder.PreLoadCharacter();
+            //for(int i = 0; i < move.Length; i++)
+            //{
+            //    theOrder.Move(move[i].name, move[i].direction);
+            //}
+            theOrder.Turn("npc1", direction); //npc 이름 확인
             
         }
 

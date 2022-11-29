@@ -58112,7 +58112,7 @@ GameObject:
   - component: {fileID: 1009239556}
   - component: {fileID: 1009239555}
   - component: {fileID: 1009239561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -68470,7 +68470,8 @@ GameObject:
   - component: {fileID: 1341595898}
   - component: {fileID: 1341595900}
   - component: {fileID: 1341595899}
-  m_Layer: 0
+  - component: {fileID: 1341595901}
+  m_Layer: 8
   m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68608,7 +68609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341595892}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b56bf4edab9d648a35c6b280e6c843, type: 3}
   m_Name: 
@@ -68658,6 +68659,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2183408, y: 0.74003077}
   m_EdgeRadius: 0
+--- !u!114 &1341595901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341595892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4395b12f8800349a32764fccfdce7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: npc1
+  speed: 0.05
+  walkCount: 20
+  boxCollider: {fileID: 1341595900}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  animator: {fileID: 1341595895}
+  currentMapName: 
+  runSpeed: 0
+  applyRunSpeed: 0
+  applyRunFlag: 0
+  canMove: 1
+  npc:
+    NPCmove: 0
+    direction: []
+    frequency: 0
 --- !u!1 &1343595604
 GameObject:
   m_ObjectHideFlags: 0
@@ -127028,7 +127058,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -127056,7 +127086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6eaa55a0a62c24793e205642dd4bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: []
+  direction: 
   flag: 0
 --- !u!4 &2073423956
 Transform:
@@ -127066,7 +127096,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073423953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -80.23, y: -108.91, z: 1019.5767}
+  m_LocalPosition: {x: 6.1, y: -42.4, z: 1019.5767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
