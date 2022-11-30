@@ -138,19 +138,7 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: "\uB098\uD0C0\uC2A4_0"
   serializedVersion: 5
-  m_AnimatorParameters:
-  - m_Name: DirX
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: DirY
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+  m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

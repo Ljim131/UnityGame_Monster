@@ -7,7 +7,6 @@ public class OrderManager : MonoBehaviour
     private PlayerManager thePlayer;
     private List<MovingObject> characters;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +31,8 @@ public class OrderManager : MonoBehaviour
         return tempList;
 
     }
-    
-    public void notMove()
+    /*
+    public void NotMove()
     {
         thePlayer.notMove = true;
     }
@@ -42,7 +41,7 @@ public class OrderManager : MonoBehaviour
     {
         thePlayer.notMove = false;
     }
-    
+    */
 
     public void SetThorought(string _name)
     {
@@ -66,40 +65,6 @@ public class OrderManager : MonoBehaviour
         }
     }
     
-    public void Turn(string _name, string _dir)
-    {
-        for (int i = 0; i < characters.Count; i++)
-        {
-            if (_name == characters[i].characterName)
-            {
-                characters[i].animator.SetFloat("DirX", 0f);
-                characters[i].animator.SetFloat("DirY", 0f);
-                switch(_dir)
-                {
-                    
-                    case "UP" :
-                        characters[i].animator.SetFloat("DirY", 1f);
-                        break;
-                    case "DOWN" :
-                        characters[i].animator.SetFloat("DirY", -1f);
-                        break;
-                    case "LEFT" :
-                        characters[i].animator.SetFloat("DirX", -1f);
-                        break;
-                    case "RIGHT" :
-                        characters[i].animator.SetFloat("DirX", 1f);
-                        break;
-
-                }
-                
-            }
-        }
-    }
-
-
-
-
-
     // Update is called once per frame
     void Update()
     {

@@ -11,8 +11,6 @@ public class PlayerManager : MovingObject
     public string walkSound_3; 
     public string walkSound_4;
 
-    public bool notMove;
-
     private AudioManager theAudio;
 
 
