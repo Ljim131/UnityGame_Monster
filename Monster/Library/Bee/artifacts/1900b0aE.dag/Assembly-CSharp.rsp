@@ -384,6 +384,7 @@
 "Assets/M/Script/ChoiceManager.cs"
 "Assets/M/Script/Dialogue.cs"
 "Assets/M/Script/DialogueManager.cs"
+"Assets/M/Script/ending.cs"
 "Assets/M/Script/Event1.cs"
 "Assets/M/Script/MonsterManager.cs"
 "Assets/M/Script/MovingObject.cs"
